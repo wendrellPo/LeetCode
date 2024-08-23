@@ -1,0 +1,16 @@
+--
+-- @lc app=leetcode id=175 lang=mysql
+--
+-- [175] Combine Two Tables
+--
+-- @lc code=start
+SELECT
+  p.firstName,
+  p.lastName,
+  a.city,
+  a.state
+FROM
+  Person p
+  LEFT JOIN Address a ON p.personId = a.personId;
+
+-- @lc code=end
